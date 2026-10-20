@@ -131,7 +131,7 @@
         "failure": {
           "message": "Background execution unavailable.",
           "source": "TypeScriptSDK",
-          "stackTrace": "Error: Background execution unavailable.\n    at Object.ctx.activities.runRoomAgentBackgroundAction (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:420:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+          "stackTrace": "Error: Background execution unavailable.\n    at Object.ctx.activities.runRoomAgentBackgroundAction (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:420:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
           "applicationFailureInfo": {
             "type": "Error"
           }
@@ -328,7 +328,7 @@
           "cause": {
             "message": "Background execution unavailable.",
             "source": "TypeScriptSDK",
-            "stackTrace": "Error: Background execution unavailable.\n    at Object.ctx.activities.runRoomAgentBackgroundAction (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:420:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+            "stackTrace": "Error: Background execution unavailable.\n    at Object.ctx.activities.runRoomAgentBackgroundAction (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:420:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
             "applicationFailureInfo": {
               "type": "Error"
             }

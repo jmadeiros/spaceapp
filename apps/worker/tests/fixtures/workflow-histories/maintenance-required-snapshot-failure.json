@@ -131,7 +131,7 @@
         "failure": {
           "message": "Live snapshot fixture failure.",
           "source": "TypeScriptSDK",
-          "stackTrace": "Error: Live snapshot fixture failure.\n    at Object.ctx.activities.refreshMemoryGraphSnapshot (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:587:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+          "stackTrace": "Error: Live snapshot fixture failure.\n    at Object.ctx.activities.refreshMemoryGraphSnapshot (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:587:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
           "applicationFailureInfo": {
             "type": "Error"
           }
@@ -187,7 +187,7 @@
           "cause": {
             "message": "Live snapshot fixture failure.",
             "source": "TypeScriptSDK",
-            "stackTrace": "Error: Live snapshot fixture failure.\n    at Object.ctx.activities.refreshMemoryGraphSnapshot (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:587:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+            "stackTrace": "Error: Live snapshot fixture failure.\n    at Object.ctx.activities.refreshMemoryGraphSnapshot (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:587:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
             "applicationFailureInfo": {
               "type": "Error"
             }

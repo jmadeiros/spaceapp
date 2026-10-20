@@ -233,7 +233,7 @@
         "failure": {
           "message": "All-months refresh fixture failure.",
           "source": "TypeScriptSDK",
-          "stackTrace": "Error: All-months refresh fixture failure.\n    at Object.ctx.activities.refreshAllMonthsMemoryGraphSnapshot (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:514:36)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+          "stackTrace": "Error: All-months refresh fixture failure.\n    at Object.ctx.activities.refreshAllMonthsMemoryGraphSnapshot (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:514:36)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
           "applicationFailureInfo": {
             "type": "Error"
           }
@@ -325,7 +325,7 @@
         "failure": {
           "message": "Reconciliation fixture failure.",
           "source": "TypeScriptSDK",
-          "stackTrace": "Error: Reconciliation fixture failure.\n    at Object.ctx.activities.reconcileStaleSpaceAgentSessions (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:520:36)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+          "stackTrace": "Error: Reconciliation fixture failure.\n    at Object.ctx.activities.reconcileStaleSpaceAgentSessions (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:520:36)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
           "applicationFailureInfo": {
             "type": "Error"
           }

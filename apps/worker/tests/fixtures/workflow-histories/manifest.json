@@ -8,7 +8,7 @@
   },
   {
     "file": "dummy-exhausted-start.json",
-    "sha256": "c4ed648f84bb6ee12b26470100724b37744c2314d38b0b2f8405810dd8ecfbd0",
+    "sha256": "963b7cc4317f4baa649bd77f70a0884f37559b77974a54fd95e8d9aa4bcee6be",
     "workflowId": "synthetic-dc3f1164-6fa9-4ffa-990c-c5c7b72cf043",
     "workflowType": "dummyTurnWorkflow",
     "mode": "current"
@@ -92,21 +92,21 @@
   },
   {
     "file": "turn-failure-opencode.json",
-    "sha256": "575d259afb0b3dd6531aee0560a81155119a9c83da35890f3de9ed4b6fbd5334",
+    "sha256": "5553541888421ea5115d93a7c996bff3b49f7bec3c7b8e60da7e6feefdc3edc8",
     "workflowId": "synthetic-490685ea-fac5-4081-9733-bf8f98bbc24e",
     "workflowType": "codexAppServerTurnWorkflow",
     "mode": "current"
   },
   {
     "file": "turn-failure-cli.json",
-    "sha256": "7e3e77d12ffcac9bf9bde15ae13da8f734999a54b856ddee0b1039abed0f2377",
+    "sha256": "4dd5ae07114e196905eb863500b6f9b3382b8bc15e7694146905179ef6147af0",
     "workflowId": "synthetic-a40ecd0a-5d8d-49bf-b976-38fe7078679d",
     "workflowType": "codexAppServerTurnWorkflow",
     "mode": "current"
   },
   {
     "file": "turn-failure-room.json",
-    "sha256": "656e50d331478027be064d460f865f06da6db50110a5694829c32a47ed37c581",
+    "sha256": "c78bd04a5490b6b873f416838ef89379d25ed60cdb338a8ec98cfa4699e23bc3",
     "workflowId": "synthetic-db5ae520-f09c-4454-ab41-ac8947c7ea66",
     "workflowType": "codexAppServerTurnWorkflow",
     "mode": "current"
@@ -120,7 +120,7 @@
   },
   {
     "file": "action-failure-cleanup.json",
-    "sha256": "f15f5150259a0d8656a04ef1df0a2d4f9c5480e55bc8264efe7acf356db42a89",
+    "sha256": "d4e6d5ac99d1510e079f86a63dc923c306e6a9096f9d1652b8a67832ac428059",
     "workflowId": "space-room-action:action:failed",
     "workflowType": "roomAgentActionWorkflow",
     "mode": "current"
@@ -148,7 +148,7 @@
   },
   {
     "file": "maintenance-best-effort.json",
-    "sha256": "4dc6e3cc55e6001ac5f91202e8807e543a43b3d552330c6cd680775435a9e02c",
+    "sha256": "dc1a18fae47f8c45203986ebdf5d880461980b85b10ba5da47d7c21fea8c4521",
     "workflowId": "synthetic-f09099e3-0a39-44bc-bb11-d55505a8a12f",
     "workflowType": "memoryMaintenanceWorkflow",
     "mode": "current"
@@ -162,21 +162,21 @@
   },
   {
     "file": "maintenance-required-snapshot-failure.json",
-    "sha256": "9f338cb3f69220b17da17deff93eba7ece8c3128ef1d6d00eabb5716d1b3c92b",
+    "sha256": "679d42f70384c4223135c421df48b62b23bc205e6a7ba75a680e1882a402dec2",
     "workflowId": "synthetic-f30d8c38-d2a4-4e81-a088-b41bbcc81073",
     "workflowType": "memoryMaintenanceWorkflow",
     "mode": "current"
   },
   {
     "file": "maintenance-child-failure.json",
-    "sha256": "0615e30d6031e568569c9440bb56d0503121ede820c3b9c024cac22cc439f636",
+    "sha256": "6f8ef6ffa778e8bf4e0f9d2911e3adcf33fea100039c3177ea0d495872118ea6",
     "workflowId": "synthetic-11408372-a3fa-4b72-affa-0de8501bfaeb",
     "workflowType": "memoryMaintenanceWorkflow",
     "mode": "current"
   },
   {
     "file": "maintenance-failed-child.json",
-    "sha256": "54a16835fb1c80c8dc6f6424bc95e7952594b6690c3de48fd5f5d4effd290d8b",
+    "sha256": "28949f4192e00fbea64f8a8045b3aa34adab10ddc28ac2a1d449bb9439f27dba",
     "workflowId": "memory-child:failed",
     "workflowType": "memoryConsolidationWorkflow",
     "mode": "current"
@@ -190,7 +190,7 @@
   },
   {
     "file": "consolidation-mutation-exhausted.json",
-    "sha256": "0abe41e9f1741cf32b0e1409024e9f5e2b72924e95aa8f707ace309f03a009b9",
+    "sha256": "d17a43bdd7b736ad8b74a55bd29530aa27c36123e4701037fb83af3645a8ce6e",
     "workflowId": "synthetic-fdec76b8-cbe4-4c5e-b570-ee1f8288aeb9",
     "workflowType": "memoryConsolidationWorkflow",
     "mode": "current"
@@ -211,7 +211,7 @@
   },
   {
     "file": "mutation-exhausted.json",
-    "sha256": "741b9b060c81f1b19b664d305c7db5a6b37824f3a0e08fe6538857636887c666",
+    "sha256": "7b85ec25e19f11a112288e8c2fafd9131689d1b4f227fad22fa0237fa0771826",
     "workflowId": "synthetic-4a7fd76e-0720-4bb4-a322-a6228de6e7c3",
     "workflowType": "memoryMutationWorkflow",
     "mode": "current"

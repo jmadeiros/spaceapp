@@ -131,7 +131,7 @@
         "failure": {
           "message": "Mutation execution fixture failure.",
           "source": "TypeScriptSDK",
-          "stackTrace": "Error: Mutation execution fixture failure.\n    at Object.ctx.activities.executePersistedMemoryChangeSet (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:696:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+          "stackTrace": "Error: Mutation execution fixture failure.\n    at Object.ctx.activities.executePersistedMemoryChangeSet (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:696:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
           "applicationFailureInfo": {
             "type": "Error"
           }
@@ -187,7 +187,7 @@
           "cause": {
             "message": "Mutation execution fixture failure.",
             "source": "TypeScriptSDK",
-            "stackTrace": "Error: Mutation execution fixture failure.\n    at Object.ctx.activities.executePersistedMemoryChangeSet (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:696:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+            "stackTrace": "Error: Mutation execution fixture failure.\n    at Object.ctx.activities.executePersistedMemoryChangeSet (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:696:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
             "applicationFailureInfo": {
               "type": "Error"
             }

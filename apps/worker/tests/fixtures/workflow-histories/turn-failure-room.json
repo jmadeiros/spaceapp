@@ -131,7 +131,7 @@
         "failure": {
           "message": "Fixture turn failed.",
           "source": "TypeScriptSDK",
-          "stackTrace": "Error: Fixture turn failed.\n    at Object.ctx.activities.<computed> [as runCodexAppServerTurn] (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:377:17)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+          "stackTrace": "Error: Fixture turn failed.\n    at Object.ctx.activities.<computed> [as runCodexAppServerTurn] (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:377:17)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
           "applicationFailureInfo": {
             "type": "Error"
           }
@@ -187,7 +187,7 @@
           "cause": {
             "message": "Fixture turn failed.",
             "source": "TypeScriptSDK",
-            "stackTrace": "Error: Fixture turn failed.\n    at Object.ctx.activities.<computed> [as runCodexAppServerTurn] (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:377:17)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+            "stackTrace": "Error: Fixture turn failed.\n    at Object.ctx.activities.<computed> [as runCodexAppServerTurn] (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:377:17)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
             "applicationFailureInfo": {
               "type": "Error"
             }

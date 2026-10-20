@@ -123,14 +123,21 @@ export async function runScenario(env: TestWorkflowEnvironment, scenario: Scenar
       shutdownGraceTime: 0, shutdownForceTime: "5 seconds"
     }));
     const execute = async () => {
+      let scenarioFailure: { error: unknown } | undefined;
       try { await scenario.run(ctx); }
-      finally {
-        // Native start handles target the current run of their original chain,
-        // including after continue-as-new. Do not leak a chain into the next case.
-        for (const handle of owned) {
-          try { await handle.terminate("Synthetic contract test completed"); }
-          catch (error) { if (!(error instanceof WorkflowNotFoundError)) throw error; }
-        }
+      catch (error) { scenarioFailure = { error }; }
+      // Native start handles target the current run of their original chain,
+      // including after continue-as-new. Attempt every chain even if one fails.
+      const cleanupErrors: unknown[] = [];
+      for (const handle of owned) {
+        try { await handle.terminate("Synthetic contract test completed"); }
+        catch (error) { if (!(error instanceof WorkflowNotFoundError)) cleanupErrors.push(error); }
+      }
+      // Preserve even falsy thrown values from the scenario, rather than masking
+      // its failure with cleanup diagnostics.
+      if (scenarioFailure) throw scenarioFailure.error;
+      if (cleanupErrors.length) {
+        throw new AggregateError(cleanupErrors, `Failed to terminate owned workflows in ${scenario.name}`);
       }
     };
     await workers.reduceRight<() => Promise<void>>((inner, worker) => () => worker.runUntil(inner), execute)();

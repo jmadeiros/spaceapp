@@ -131,7 +131,7 @@
         "failure": {
           "message": "Start recording unavailable.",
           "source": "TypeScriptSDK",
-          "stackTrace": "Error: Start recording unavailable.\n    at Object.ctx.activities.recordDummyTurnStarted (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:169:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+          "stackTrace": "Error: Start recording unavailable.\n    at Object.ctx.activities.recordDummyTurnStarted (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:169:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
           "applicationFailureInfo": {
             "type": "Error"
           }
@@ -187,7 +187,7 @@
           "cause": {
             "message": "Start recording unavailable.",
             "source": "TypeScriptSDK",
-            "stackTrace": "Error: Start recording unavailable.\n    at Object.ctx.activities.recordDummyTurnStarted (/workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/basic-scenarios.ts:169:15)\n    at /workspace/scratch/4995b448c703/spaceapp60_private/apps/worker/tests/trace-contracts/harness.ts:109:43",
+            "stackTrace": "Error: Start recording unavailable.\n    at Object.ctx.activities.recordDummyTurnStarted (/synthetic-spaceapp/apps/worker/tests/trace-contracts/basic-scenarios.ts:169:15)\n    at /synthetic-spaceapp/apps/worker/tests/trace-contracts/harness.ts:109:43",
             "applicationFailureInfo": {
               "type": "Error"
             }

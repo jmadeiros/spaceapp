@@ -30,13 +30,19 @@ Supervisor failure scenarios cover generic child failures, typed application
 failures and serialized Temporal timeout causes through the real server. The
 timeout-cause case injects a synthetic `TimeoutFailure` inside an application
 failure; it verifies cause propagation, not elapsed timeout expiration. These
-live scenarios retain the existing 46 stored history baselines unchanged.
+live scenarios retain the existing 46 stored history baselines, with only the
+recording-path correction described below.
 
 Every ordinary run executes the live contract scenarios and replays the stored
 histories through `Worker.runReplayHistories`. It does not generate or rewrite
 fixtures. All JSON files must be listed exactly once in the manifest. Recording
-uses the proto package's matching protobuf serializer and proves byte-for-byte
-protobuf round-trip preservation before writing JSON. A separate bundle inserts
+uses the proto package's matching protobuf serializer. It normalizes the exact
+current checkout root in V8 stack-frame locations within protobuf
+`Failure.stackTrace` fields to `/synthetic-spaceapp`, without mutating the input
+history, then proves byte-for-byte protobuf round-trip preservation of that
+normalized message before writing JSON. Payload bytes, including encoded
+failure attributes, remain opaque and unchanged; this is not a general scrubber.
+A separate bundle inserts
 a timer before the goal workflow and must
 raise `DeterminismViolationError`, proving the replay gate rejects an
 incompatible command sequence. The suite also measures its real elapsed time
@@ -49,6 +55,14 @@ ordinary promise/test timeouts alone cannot interrupt that case. No internal
 SDK timeout or debug-mode override is used.
 
 ## Source provenance
+
+The original recordings received one path-only correction: 44 recording-checkout
+prefixes in 22 failure-stack fields across 11 histories were replaced with
+`/synthetic-spaceapp`, and those 11 manifest digests were updated. No history was
+re-recorded. Every other JSON byte, including event metadata and payloads, was
+preserved. Failure stacks are workflow-visible diagnostic data, so replay
+validation remains necessary; they are not ignored serialization metadata.
+This correction does not remove the original paths from earlier Git commits.
 
 - `current` runs the production workflow exports without modifications.
 - `legacy` uses a TypeScript AST loader to export the exact dormant
